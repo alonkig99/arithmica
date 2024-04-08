@@ -28,14 +28,6 @@ class VarAccessNode:
         self.var_name_tok = var_name_tok
 
 
-class VariableNode:
-    def __init__(self, name):
-        self.name = name
-
-    def __repr__(self):
-        return f'VariableNode({self.name})'
-
-
 class ComparisonNode:
     def __init__(self, left_expr, op_tok, right_expr):
         self.left_expr = left_expr

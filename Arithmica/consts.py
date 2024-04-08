@@ -16,7 +16,7 @@ T_LT = 'LT'  # less than
 T_GT = 'GT'  # Greater than
 T_LPAREN = 'LPAREN'  # (
 T_RPAREN = 'RPAREN'  # )
-
 KEYWORDS = ['VAR']
+MAX_VARS = 3
 
 RESTRICTED_VAR_CHARS = ['(', ')', '=', '@', '#', '%', '^', '*', '-', '~', '+', '-', '>', '<', '/']
