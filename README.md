@@ -40,27 +40,30 @@ input:
 ```
 output:
 ```
+1
 ```
 meaning:\
-is 'a' greater than 'b'?\
-output:
-```
-```
+is 'a' greater than 'b'? Yes.\
 input:
 ```
 < 5 4
 ```
+output:
+```
+0
+```
 meaning:\
-is 5 less than 4?\
+is 5 less than 4? No.\
 input:
 ```
 == (+ 4 5) (- 3 8)
 ```
 output:
 ```
+0
 ```
 meaning:\
-does 4 plus 5 equal 3 minus 8?
+does 4 plus 5 equal 3 minus 8? No.
 
 
 **Math expression examples**:
@@ -101,5 +104,13 @@ The interpeter object produces the following result:
 ```
 
 Variable assignments are stored in a dictonary data structure and can be later used in calculations:
+In the main function:
+```python
+global_dict = Dict()
+```
+
+In the Interpreter class, evan_assign method:
+```python
+global_dict.set(var_name, value)
 
 
