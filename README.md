@@ -32,8 +32,6 @@ VAR b = - 33 4
 ```
 **Boolean expression examples:**
 
-Demonstarted in other parts of this document.
-
 input:
 ```
 > a b
@@ -66,11 +64,12 @@ meaning:\
 does 4 plus 5 equal 3 minus 8? No.
 
 
-**Math expression examples**:
+**Math expression examples**:\
+Demonstarted in other parts of this document.
 
 
 ## How it works:
-The program prompts the user for input. The input text is saved into a variable and then tokenized, parsed and interpreted:\
+The program prompts the user for input. The input text is saved into a variable and then tokenized, parsed and interpreted:
 ```python
 lexer = Lexer(text)
 tokens = lexer.make_tokens()
