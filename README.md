@@ -22,12 +22,11 @@ Interpeter-The Interpreter evaluates the parse tree produced by the Parser, exec
 `Less than '<'`\
 `Equals  '=='`
 
-to be continued...
-
-Variable assignment:\
 
 
+Variable assignment:
 
 ```
 VAR x = 5
 ```
+**to be continued...**
