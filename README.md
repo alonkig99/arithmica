@@ -32,7 +32,7 @@ VAR b = - 33 4
 ```
 **Boolean expression examples:**
 
-
+Demonstarted in other parts of this document.
 
 input:
 ```
