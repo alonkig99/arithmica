@@ -38,20 +38,20 @@ input:
 ```
 output:
 ```
-1
-```
-meaning:\
-is 'a' greater than 'b'? Yes.\
-input:
-```
-< 5 4
-```
-output:
-```
 0
 ```
 meaning:\
-is 5 less than 4? No.\
+is 'a' greater than 'b'? No.\
+input:
+```
+< 4 5
+```
+output:
+```
+1
+```
+meaning:\
+is 4 less than 5? Yes.\
 input:
 ```
 == (+ 4 5) (- 3 8)
