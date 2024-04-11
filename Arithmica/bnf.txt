@@ -1,15 +1,14 @@
-<assignment> ::= <identifier> "=" <expression>
+<assignment> ::= VAR <identifier> "=" <expression>
 
 <expression> ::= <operator> (<operand> | <expression>)*
 
-<operator> ::= "+" | "-" | "*" | "/"
+<operator> ::= "+" | "-" | "*"
 
 <operand> ::= <number> | <identifier>
 
-<identifier> ::= <letter> (<letter> | <digit>)*
+<identifier> ::= (<letter>)+  | (<letter>)+ _+(<letter>)*
 
 <number> ::= <digit>+
 
 <letter> ::= "a" | "b" | ... | "z" | "A" | "B" | ... | "Z"
 
-<digit> ::= "0" | "1" | ... | "9"

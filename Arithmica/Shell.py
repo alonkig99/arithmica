@@ -9,12 +9,13 @@ global_dict = Dict()
 
 def run(text):
     lexer = Lexer(text)
+
     tokens = lexer.make_tokens()
-    print(tokens)
+    #print(tokens)
 
     parser = Parser(tokens)
     ast = parser.parse()  # Parsing the entire input
-
+    print(ast)
     interpreter = Interpreter()
 
     if isinstance(ast, VarAssignNode):
@@ -25,14 +26,15 @@ def run(text):
     return result  # Return the result
 
 
-print("Welcome To Arithmica Interpreter")
-while True:
-    user_input = input(">>> ").strip()
-    if user_input.lower() == 'exit':
-        break
+# print("Welcome To Arithmica Interpreter")
+# while True:
+#     user_input = input(">>> ").strip()
+#     if user_input.lower() == 'exit':
+#         break
+#
+#     try:
+#         result = run(user_input)
+#         print(result)
+#     except Exception as e:
+#         print("Error:", e)
 
-    try:
-        result = run(user_input)
-        print(result)
-    except Exception as e:
-        print("Error:", e)

@@ -1,7 +1,7 @@
 
 from consts import *
 from nodes import *
-from Token import *
+
 
 class Interpreter:
 
@@ -12,8 +12,6 @@ class Interpreter:
             return x - y
         if op.type == T_MUL:
             return x * y
-        if op.type == T_DIV:
-            return x // y
         if op.type == T_EQUALS:
             return int(x == y)
         if op.type == T_GT:

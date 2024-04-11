@@ -19,7 +19,7 @@ class Lexer:
     def make_identifier(self):
         id_str = ''
 
-        while self.current_char is not None and self.current_char in LETTERS_DIGITS + '_':
+        while self.current_char is not None and self.current_char in LETTERS + '_':
             id_str += self.current_char
             self.advance()
 
@@ -65,11 +65,6 @@ class Lexer:
                 self.advance()
                 if self.current_char not in ' \t':
                     raise Exception("Invalid syntax: Space expected after '*' operator")
-            elif self.current_char == '/':
-                tokens.append(Token(T_DIV))
-                self.advance()
-                if self.current_char not in ' \t':
-                    raise Exception("Invalid syntax: Space expected after '/' operator")
             elif self.current_char == '=':  # MAKE either = or ==
                 tokens.append(self.make_equals())
             elif self.current_char == '<':

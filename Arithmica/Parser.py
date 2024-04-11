@@ -61,7 +61,7 @@ class Parser:
 
             return expr
 
-        elif self.current_tok.type in [T_PLUS, T_MINUS, T_MUL, T_DIV, T_LT, T_GT, T_EQUALS]:
+        elif self.current_tok.type in [T_PLUS, T_MINUS, T_MUL, T_LT, T_GT, T_EQUALS]:
             op_tok = self.current_tok
             self.advance()
 

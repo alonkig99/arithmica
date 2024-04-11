@@ -7,7 +7,6 @@ T_INT = 'INT'
 T_PLUS = 'PLUS'
 T_MINUS = 'MINUS'
 T_MUL = 'MUL'
-T_DIV = 'DIV'
 T_IDENTIFIER = 'IDENTIFIER'
 T_KEYWORD = 'KEYWORD'
 T_ASSIGN = 'ASSIGN'  # =
@@ -17,6 +16,6 @@ T_GT = 'GT'  # Greater than
 T_LPAREN = 'LPAREN'  # (
 T_RPAREN = 'RPAREN'  # )
 KEYWORDS = ['VAR']
-MAX_VARS = 3
+MAX_VARS = 20
 
-RESTRICTED_VAR_CHARS = ['(', ')', '=', '@', '#', '%', '^', '*', '-', '~', '+', '-', '>', '<', '/']
+#RESTRICTED_VAR_CHARS = ['(', ')', '=', '@', '#', '%', '^', '*', '-', '~', '+', '-', '>', '<', '/']
