@@ -28,6 +28,7 @@ It is a final project for "Progamming Languages" course in our Computer Science 
 
 VAR a = 5
 VAR b = - 33 4
+VAR c = b
 
 ```
 **Boolean expression examples:**
@@ -97,6 +98,9 @@ The parser object produces the following Abstract Syntax Tree(ast):
 ```
 ((-34, MUL, 4), PLUS, 9)
 ```
+![download (1)](https://github.com/AlonKigelman/Arithmica/assets/72994068/25d8bf3c-34d9-4238-a867-4b991ca4517b)
+
+
 The interpeter object produces the following result:
 ```
 -127
