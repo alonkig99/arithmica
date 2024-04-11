@@ -27,7 +27,7 @@ It is a final project for "Progamming Languages" course in our Computer Science 
 ```python
 
 VAR a = 5
-VAR b = + * 5 3 - 7 2 + * 4 2 - 8 1
+VAR b = + + 6 9 + * 4 2 * 4 2
 VAR c = b
 
 ```
