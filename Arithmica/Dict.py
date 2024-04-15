@@ -1,3 +1,4 @@
+# Class that defines the interpreter's dictionary that manages assigned variables
 class Dict:
     def __init__(self):
         self.dict = {}

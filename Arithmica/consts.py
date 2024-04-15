@@ -17,5 +17,7 @@ T_LPAREN = 'LPAREN'  # (
 T_RPAREN = 'RPAREN'  # )
 KEYWORDS = ['VAR']
 MAX_VARS = 20
-
+MAX_RES_VAL= 1000000000
+MIN_RES_VAL= -1000000000
+MAX_VAR_NAME_LEN = 10
 #RESTRICTED_VAR_CHARS = ['(', ')', '=', '@', '#', '%', '^', '*', '-', '~', '+', '-', '>', '<', '/']

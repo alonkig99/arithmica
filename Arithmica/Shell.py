@@ -26,15 +26,15 @@ def run(text):
     return result  # Return the result
 
 
-# print("Welcome To Arithmica Interpreter")
-# while True:
-#     user_input = input(">>> ").strip()
-#     if user_input.lower() == 'exit':
-#         break
-#
-#     try:
-#         result = run(user_input)
-#         print(result)
-#     except Exception as e:
-#         print("Error:", e)
+print("Welcome To Arithmica Interpreter")
+while True:
+    user_input = input(">>> ").strip()
+    if user_input.lower() == 'exit':
+        break
+
+    try:
+        result = run(user_input)
+        print(result)
+    except Exception as e:
+        print("Error:", e)
 

@@ -32,6 +32,7 @@ class Lexer:
         while self.current_char is not None:
             if self.current_char in ' \t':
                 self.advance()
+                # building a signed number
             elif self.current_char in "-+" and self.text[self.pos + 1] in DIGITS:
                 sign = self.current_char
                 num_str = sign + ''
@@ -40,6 +41,7 @@ class Lexer:
                     num_str += self.current_char
                     self.advance()
                 tokens.append(Token(T_INT, int(num_str), sign))
+                #building an unsigned number
             elif self.current_char in DIGITS:
                 # If the current character is a digit, tokenize a multi-digit number
                 num_str = ''
@@ -47,14 +49,17 @@ class Lexer:
                     num_str += self.current_char
                     self.advance()
                 tokens.append(Token(T_INT, int(num_str)))
+                # + operator token
             elif self.current_char == '+':
                 tokens.append(Token(T_PLUS))
                 self.advance()
                 if self.current_char not in ' \t':
                     raise Exception("Invalid syntax: Space expected after '+' operator")
+                # builiding a variable name token (identifier)
             elif self.current_char in LETTERS:
                 tokens.append(self.make_identifier())
                 # self.advance()
+                # minus operator token
             elif self.current_char == '-':
                 tokens.append(Token(T_MINUS))
                 self.advance()
