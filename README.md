@@ -1,7 +1,7 @@
-  # Arithmica
-
-Arithmica is an interpreter written in Python that supports calculation of prefix math expressions, variable assignments and boolean comparsions. 
-It is a final project for "Progamming Languages" course in our Computer Science degree in college.
+  # ARITHMICA
+  
+Interpreter written in Python that supports calculation of prefix math expressions, variable assignments and boolean comparsions.\
+Writen for "Programming Languages" course in college.
 
 
 
@@ -106,14 +106,4 @@ The interpeter object produces the following result:
 -127
 ```
 
-Variable assignments are stored in a dictonary data structure and can be later used in calculations:
-In the main function:
-```python
-global_dict = Dict()
-```
-
-In the Interpreter class, evan_assign method:
-```python
-global_dict.set(var_name, value)
-
-
+Variable assignments are stored in a dictonary data structure and can be later used in calculations.
