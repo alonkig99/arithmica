@@ -1,7 +1,7 @@
   # ARITHMICA
   
 Interpreter written in Python that supports calculation of prefix math expressions, variable assignments and boolean comparsions.\
-Writen for "Programming Languages" course in college.
+Written for "Programming Languages" course in college.
 
 
 
